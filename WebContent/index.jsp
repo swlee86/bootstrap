@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -21,15 +22,6 @@
 
 <script type="text/javascript">
 $(function(){
-	$('#login_dialog').dialog(
-			{
-				 autoOpen:false,
-			     width : "330px",
-			     resizable:false,
-			     modal:true
-			}		
-		);
-
 		$('#open_button').click(function(){
 			$('#login_dialog').dialog('open')
 		});
@@ -38,7 +30,7 @@ $(function(){
 		$('#register_dialog').dialog(
 				{
 					 autoOpen:false,
-				     width : "800px",
+				     width : "auto",
 				     resizable:false,
 				     modal:true
 				}		
@@ -49,7 +41,6 @@ $(function(){
 			});
 			
 			$('#DDD').click(function(){
-				$('#login_dialog').dialog('close')
 				$('#register_dialog').dialog('open')
 			});
 			
@@ -57,37 +48,41 @@ $(function(){
 	if(loginstate == true){
 %>		
 			$("#contents").click(function(){ 
-				$("#content").load("Canvas_SvgStudy.html"); 
+				$("#jb-content").load("Canvas_SvgStudy.html"); 
 				}); 
 
 				
 				$("#member").click(function(){ 
-				$("#content").load("Member_final.html"); 
+				$("#jb-content").load("Member_final.html"); 
 				}); 
 				
 				$("#freeboard").click(function(){ 
-				$("#content").load("Freeboard.html"); 
+				$("#jb-content").load("Freeboard.html"); 
 				}); 
 				
 				
 				$("#guestbook").click(function(){ 
-				$("#content").load('GuestBook.html'); 
+				$("#jb-content").load('GuestBook.html'); 
 				});
 				
 				$("#databoard").click(function(){ 
-				$("#content").load('DataBoard.html'); 
+				$("#jb-content").load('DataBoard.html'); 
 				}); 
 				
 				$("#mainbutton").click(function(){ 
-				$("#content").load('Member_final.html'); 
+				$("#jb-content").load('Member_final.html'); 
 				}); 
 				
 				$("#source").click(function(){ 
-				$("#content").load('Source.html'); 
+				$("#jb-content").load('Source.html'); 
 				}); 
 				
 				$("#bookinfo").click(function(){ 
-				$("#content").load('bookmain.html'); 
+				$("#jb-content").load('book.html'); 
+				}); 
+				
+				$("#booktest").click(function(){ 
+				$("#jb-content").load('bookmenutest.jsp'); 
 				}); 
 <%
 	}else{
@@ -124,17 +119,18 @@ $(function(){
 	$("#bookinfo").click(function(){ 
 		alert("죄송합니다. 로그인 후 이용해 주세요")
 	}); 
+	
+	$("#bookinfo").click(function(){ 
+		alert("죄송합니다. 로그인 후 이용해 주세요")
+	}); 
 <%
 	}
 %>
 
-
-
-
 	//로그인시 고객 정보 확인(제약)
     var numcheck = /^[0-9]{2,3}[0-9]{3,4}[0-9]{4}$/
     //alert(inputNumber);
-$('#register_gogo').click(function(){
+	$('#register_gogo').click(function(){
 	if($('#inputEmail').val()==""){
 		alert("ID는 필수 값입니다");
 		$('#inputEmail').focus();
@@ -201,164 +197,86 @@ $('#register_gogo').click(function(){
     			}
     		}
     });
-		
-		
 }); 
 
-
-
-
 </script>
-
-
-
 <style type="text/css">
-.navbar {
-background:#FFFFFF;
-
-}
-
-.navbar .navbar-center {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-  text-align: center;
-}
-
-#page_footer {
-height: 60px;
-background: #f5f5f5;
-}
-.footer_text{
-margin: 20px 0;
-color: #777;
-}
-
-.jumbotron {
-	padding-left: 50px; 
-	width: 80%;	
-}
-
-#container {
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-}
-#header {
-	height: 50px;
-	width: 100%;
-	background-color:#ff00ff;
-}
-
-#content {
-	width: 90%;
-	height: 90%;
-	padding: 20px;
-	margin-right: 160px;
-	margin-left: 160px;
-}
-
-#leftnav {
-	float: left;
-	width: 10%;
-	height: 90%;
-	background-color: white;
-	padding: 5px;
-		
-}
-
-#leftnav ul{
-	margin-left: 0;
-	padding-left: 0;
-	list-style-type: none;
-	font-family: '돋움', Helvetica, sans-serif;
-	font-size: 12px;
-}
-
-#leftnav a{
-	display: block;
-	width: 130px;
-	padding-top: 3px;
-	padding-right: 3px;
-	padding-bottom: 3px;
-	padding-left: 3px;
-	border-bottom-width: 1px;
-}
-
-#leftnav a:link, .navlist a:visited{
-color: #ffffff;
-text-decoration: underline;
-font-weight: bold;
-}
-
-#leftnav a:visited{
-   color: #ffffff;
-   text-decoration: underline;
-   font-weight: bold;
-}
-
-#leftnav a:hover{
-	text-decoration: none;
-	color: #0000ff;
-}
-
-#footer {
-	background-color: black;
-	padding: 10px;
-	clear: both;
-	font-family: '돋움', Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	color: white;
-	text-align: center;
-	height: 10%;
-}
+  <style>
+      #jb-container {
+        width: 940px;
+        margin: 0px auto;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-header {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-content {
+        width: 850px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-sidebar {
+        width: 260px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: right;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-footer {
+        clear: both;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      @media screen and (max-width:480px) {
+        #jb-container {
+          width: auto;
+        }
+        #jb-content {
+          float: none;
+          width: auto;
+        }
+        #jb-sidebar {
+          float: none;
+          width: auto;
+        }
+      }
 
 </style>
 </head>
 <body>
+   <div id="jb-container">
+      <div id="jb-header">
+        <jsp:include page="/CommonModule/Top.jsp"></jsp:include>
+      </div>
+      
 
-<div id="container">
-	<!-- Top 영역 -->
-	<div id="header">
-	<jsp:include page="/CommonModule/Top.jsp"></jsp:include>
-	</div>
-	
-	<!-- Content 영역-->
-	<div id="content">
-		<jsp:include page="/CommonModule/Content.jsp"></jsp:include>
-	</div>
-
-	<!-- footer 영역(footer도 jsp파일로 작업하여 연결 필요 --> 
-	<div align="center" id="footer">
-		copyright@3조
-	</div>
-</div>
-
-
-
-
-   <!-- info Login_pop_up -->
+      <div id="jb-content">
+        <h2>공지사항 안내</h2>
+    	 <jsp:include page="/CommonModule/Content.jsp"></jsp:include>
+      </div>
+      
+      
+      <div id="jb-sidebar">
+         <!-- info Login_pop_up -->
 <%
 	session = request.getSession(true);
 	if( session.getAttribute("sessionId") != null){
-	
+		
 %>
 	<script type="text/javascript">
 		window.onload=function(){
-			$("#leftnav").load("afterlogin.jsp");	
+			$("#jb-sidebar").load("afterlogin.jsp");	
 		};
 	</script>
-  <%
+
+<%
  }else{
-  %>
-   <div id="login_dialog" title="Login">
-   	 <div class="container">
-      <div class="row">
-        <div class="page-header">
-        </div>
-        <div class="col-md-3">
-          <div class="login-box well">
+%>
         <form method="post" action="loginConfirm.jsp" id="logjspgo">
             <div class="form-group">
                 <label for="username-email">이메일</label>
@@ -379,21 +297,26 @@ font-weight: bold;
                 <a href="#" class="btn btn-default btn-block m-t-md" id="DDD">회원가입</a>
             </div>
         </form>
-          </div>
-        </div>
       </div>
-    </div>
-   </div>
 <%
  	}
 %>
-   
+ 
+      <div id="jb-footer">
+        <p>Copyright 3조</p>
+        <p>해당 사이트는 고객들의 정보(이메일 및 연락처 등의)수집에 대해서 허가하지 않습니다 </p>
+      </div>
+    </div>
+ 
+
   <!-- info Register_pop_up -->   	
+   
+
    <div id="register_dialog" title="Register">
    	  <div class="contentwrap">
   <article class="container">
     <div class="page-header">
-	  <h1>회원가입 <small>일반회원가입</small></h1>
+	  <h1>회원가입 <small>// 일반회원가입</small></h1>
     </div>
    </article>
     <form class="form-horizontal" action="register.jsp" method="post" id="regijspgo">
@@ -449,6 +372,14 @@ font-weight: bold;
     </form>
    </div>
   </div> 
+  
+  
+  <!-- 이용약관 -->
+  <div id="accept_dialog" title="accept">
+  
+  </div>
+  
+  
 
 </body>
 </html>

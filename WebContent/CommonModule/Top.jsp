@@ -22,6 +22,7 @@
         <li><a href="#" id="member">Member</a></li>
         <li><a href="#" id="contents">Content</a></li>
         
+        <!-- 게시판 메뉴 추가 -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Board<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -32,12 +33,12 @@
           </ul>
          </li>
         
-        <!-- Utill메뉴 추가  -->
+        <!-- Util 메뉴 추가  -->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Utill<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Util<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#" id="bookinfo">도서 정보</a></li>
-            <li><a href="#" id="databoard">준비중</a></li>
+            <li><a href="#" id="booktest">준비중</a></li>
             <li class="divider"></li>
             <li><a href="#" id="source">준비중</a></li>
           </ul>
@@ -63,7 +64,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Etc Link<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="https://www.oracle.com/index.html" target="_blank">Oracle</a></li>
+            <li><a href="https://www.oracle.com/index.html" target="_bl ank">Oracle</a></li>
             <li><a href="http://www.eclipse.org/home/index.php" target="_blank">Eclipse</a></li>
             <li class="divider"></li>
             <li><a href="http://colorscripter.com/" target="_blank">Color Scripter</a></li>

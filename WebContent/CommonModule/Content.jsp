@@ -1,7 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-		<div class="jumbotron">
-  			<h1>Hello, world!</h1>
-  				<p>kosta 129th 3조의 홈페이지에 오신 것을 환영합니다.</p>
-			  	<p><a class="btn btn-primary btn-lg" id="mainbutton" href="#" role="button">3조에 대해 알아봅시다</a></p>
-		</div>
+<div class="panel panel-default" style="width: auto;">
+  <div class="panel-heading">
+ 	 <h3 class="panel-title">공지사항 1</h3>
+  </div>
+  <div class="panel-body">
+    	현재 해당 사이트는 Bootstrap 기반으로 개편 중입니다.
+    </div>
+  </div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">공지사항 2</h3>
+  </div>
+  <div class="panel-body">
+    	해당 사이트는 회원가입을 하시지 않으시면 이용이 불가합니다.
+  </div>
+ </div>
