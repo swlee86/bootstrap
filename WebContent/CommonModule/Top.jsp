@@ -64,7 +64,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Etc Link<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="https://www.oracle.com/index.html" target="_bl ank">Oracle</a></li>
+            <li><a href="https://www.oracle.com/index.html" target="_blank">Oracle</a></li>
             <li><a href="http://www.eclipse.org/home/index.php" target="_blank">Eclipse</a></li>
             <li class="divider"></li>
             <li><a href="http://colorscripter.com/" target="_blank">Color Scripter</a></li>
