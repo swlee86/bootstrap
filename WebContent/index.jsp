@@ -43,7 +43,7 @@ $(function(){
 			$('#DDD').click(function(){
 				$('#register_dialog').dialog('open')
 			});
-			
+
 <%			
 	if(loginstate == true){
 %>		
@@ -285,7 +285,7 @@ $(function(){
             <div class="form-group">
                 <label for="password">비밀번호</label>
                 <input name="password" id="passwordch" value='' placeholder="Password" type="password" class="form-control" />
-            	<input type="checkbox" name="uselogin" id="uselogin">보안 로그인(cookie를 생성하지 않습니다.)
+            	<input type="checkbox" name="uselogin" id="uselogin">쿠키 생성
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-default btn-login-submit btn-block m-t-md" value="login" id="logingo">      
@@ -309,9 +309,7 @@ $(function(){
     </div>
  
 
-  <!-- info Register_pop_up -->   	
-   
-
+  <!-- info Register_pop_up -->
    <div id="register_dialog" title="Register">
    	  <div class="contentwrap">
   <article class="container">
@@ -350,7 +348,6 @@ $(function(){
     <label for="inputNumber" class="col-sm-2 control-label" id=hpnum>휴대폰번호</label>
     <div class="col-sm-4">
     <input type="text" class="form-control" id="inputNumber" name="phnum" placeholder="휴대폰번호">
-
       <p class="help-block">- 없이 적어주세요.</p>
     </div>
    </div>
@@ -379,7 +376,6 @@ $(function(){
   
   </div>
   
-  
-
+ 
 </body>
 </html>

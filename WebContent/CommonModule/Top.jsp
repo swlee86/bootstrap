@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%request.setCharacterEncoding("UTF-8"); %>    
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 
@@ -56,8 +57,6 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-      
-
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="https://cafe.naver.com/kosta129" target="_blank">Kosta129기 Cafe</a></li>
@@ -72,6 +71,7 @@
             <li><a href="http://192.168.0.126/" target="_blank">강사님 FTP 주소</a></li>
           </ul>
         </li>
+        <li><a href="#" id="Admin">Admin</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
