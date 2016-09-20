@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>조원 소개</title>
+<script type="text/javascript">
+   $(function() {
+      $("#dialog1").dialog({
+         autoOpen : false,
+         width : "330px",
+
+         resizable : false,
+         modal : true
+      });
+      
+      $("#dialog2").dialog({
+          autoOpen : false,
+          width : "330px",
+          resizable : false,
+          modal : true
+       });
+      
+      $("#dialog3").dialog({
+          autoOpen : false,
+          width : "330px",
+          resizable : false,
+          modal : true
+       });
+      
+      
+      $("#dialog4").dialog({
+          autoOpen : false,
+          width : "330px",
+          resizable : false,
+          modal : true
+       });
+      
+      $("#dialog5").dialog({
+          autoOpen : false,
+          width : "330px",
+          resizable : false,
+          modal : true
+       });
+      
+      $("#dialog6").dialog({
+          autoOpen : false,
+          width : "330px",
+          resizable : false,
+          modal : true
+       });
+      
+
+      $("#minsuInfo").click(function() {
+         $("#dialog1").dialog("open");
+      });
+
+      $("#sangInfo").on("click", function() {
+         $("#dialog2").dialog("open");
+      });
+
+      $("#songInfo").on("click", function() {
+         $("#dialog3").dialog("open");
+      });
+
+      $("#youngInfo").on("click", function() {
+         $("#dialog4").dialog("open");
+      });
+
+      $("#areumInfo").on("click", function() {
+         $("#dialog5").dialog("open");
+      });
+      
+      $("#leeInfo").on("click", function() {
+         $("#dialog6").dialog("open");
+      });
+   });
+</script>
+</head>
+<body>
+   <div class="row">
+      <div class="col-sm-6 col-md-4">
+         <div class="thumbnail">
+            <img src="images/jkms.jpg" alt="master">
+            <div class="caption">
+               <h3>강민수</h3>
+               <a href="#" class="btn btn-primary" role="button">쪽지 발송</a>
+               <button id="minsuInfo" class="btn btn-default">상세 프로필</button>
+               <div id="dialog1" title="Basic dialog">
+                  <p>
+                     이름: 강민수<br>나이: 27세<br>지역: 성남시 분당구<br>취미: 영화보기, 뀨뀨<br>
+                     TEL: 010-7625-8001
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+         <div class="thumbnail">
+            <img src="images/lsw.jpg" alt="master">
+            <div class="caption">
+               <h3>이상원</h3>
+               <a href="#" class="btn btn-primary" role="button">쪽지 발송</a>
+               <button id="sangInfo" class="btn btn-default">상세 프로필</button>
+               <div id="dialog2" title="Profile">
+                  <p>
+                     이름: 이상원<br>나이: 31세<br>지역:수원시 영통<br>취미: 모바일게임 <br>TEL:
+                     010-9956-9955
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+         <div class="thumbnail">
+            <img src="images/sjh.jpg" alt="master">
+            <div class="caption">
+               <h3>송지현</h3>
+               <a href="#" class="btn btn-primary" role="button">쪽지 발송</a>
+               <button id="songInfo" class="btn btn-default">상세 프로필</button>
+               <div id="dialog3" title="Profile">
+                  <p>
+                     이름: 송지현<br>나이: 29세<br>지역: 성남시 분당구<br>취미: pc게임 <br>TEL:
+                     010-9186-7969
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+         <div class="thumbnail">
+            <img src="images/kyb.JPG" alt="master">
+            <div class="caption">
+               <h3>김영빈</h3>
+               <a href="#" class="btn btn-primary" role="button">쪽지 발송</a>
+               <button id="youngInfo" class="btn btn-default">상세 프로필</button>
+               <div id="dialog4" title="Profile">
+                  <p>
+                     이름: 김영빈<br>나이: 23세<br>지역: 수원시 망포동<br>취미: 놀기<br>TEL:
+                     010-8638-9316
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <hr>
+      <div class="col-sm-6 col-md-4">
+         <div class="thumbnail">
+            <img src="images/sar.PNG" alt="regester">
+            <div class="caption">
+               <h3>송아름</h3>
+               <a href="#" class="btn btn-primary" role="button">쪽지 발송</a>
+               <button id="areumInfo" class="btn btn-default">상세 프로필</button>
+               <div id="dialog5" title="Profile">
+                  <p>
+                     이름: 송아름<br>나이: 24세<br>지역: 서울시 금천구<br>취미: 노래듣기 <br>TEL: 010-9173-8268
+                  </p>
+               </div>
+            </div>
+         </div>
+        </div>
+         <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+               <img src="images/lyj.jpg" alt="master">
+               <div class="caption">
+                  <h3>이예지</h3>
+                  <a href="#" class="btn btn-primary" role="button">쪽지 발송</a>
+                  <button id="leeInfo" class="btn btn-default">상세 프로필</button>
+                  <div id="dialog6" title="Profile">
+                     <p>
+                        이름: 이예지<br>나이: 25세<br>지역: 서울시 강서구 <br>취미: 영화보기<br>TEL: 010-3284-9999
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+        </div>
+       
+</body>
+</html>

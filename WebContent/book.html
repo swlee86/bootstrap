@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+  $( function() {
+  	$('#notice').dialog(
+			{
+				  autoOpen:false,
+				  buttons: {
+								확인했어요:function(){
+									$('#notice').dialog('close');
+						 		}
+				           },
+				  modal:true,
+				  width: "550px"
+					}		
+			);
+  	
+  			
+
+			$('#open_button_1').click(function(){
+				$('#notice').dialog('open')
+			});
+			
+			$("#itbook").click(function(){ 
+				$("#book_main").load("itbook.jsp"); 
+				}); 
+			
+			$("#book_search").click(function(){ 
+				$("#book_main").load("book_search.jsp"); 
+				}); 
+
+			  var sBtn = $("#menu_1 > li");    //  nav nav-tabs nav-justified > li 이를 sBtn으로 칭한다. (클릭이벤트는 li에 적용 된다.)
+			  sBtn.find("a").click(function(){   // sBtn에 속해 있는  li 찾아 클릭 하면.
+			  sBtn.removeClass("active");     // sBtn 속에 (active) 클래스를 삭제 한다.
+			  $(this).parent().addClass("active"); // 클릭한 a에 (active)클래스를 넣는다.
+			  })
+			
+	
+  });
+  </script>
+  <style type="text/css">
+
+   button {
+   width: 200px;
+   border: 1px solid #CCCCCC;
+   background-color: #B2CCFF;
+   font-size: 15px;
+}
+
+  img {
+   width: 130px;
+   height: 180px;
+   }
+   
+  </style>
+</head>
+<body>
+
+<ul class="nav nav-tabs nav-justified" id="menu_1">
+  <li role="presentation" id="itbook"><a href="#">IT</a></li>
+  <li role="presentation"><a href="#">Fiction</a></li>
+  <li role="presentation"><a href="#">Essey</a></li>
+  <li role="presentation" id="book_search"><a href="#">Search</a></li>
+</ul>
+<hr>
+<div id="book_main">
+	<div class="alert alert-info" role="alert">사용하시고자 하는 Section을 클릭하세요</div>
+</div>
+
+<nav>
+  <ul class="pagination" style="text-align: center;">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#" id="">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+ <!-- info pop-up -->   	
+   <div id="notice" title="페이지 이용안내">
+   	   <ul>
+		<li>해당 페이지에서 이미지를 누르시면 Naver Book 스토어로 연결됩니다</li>
+		<li>Font SizeUP을 누르시면 폰트 크기가 한단계씩 증가합니다.</li>
+		<li>Font SizeDOWN을 누르시면 폰트 크기가 한단계씩 감소합니다.</li>
+	   </ul>
+   </div>
+   
+
+   
+</body>
+</html>
